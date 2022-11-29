@@ -4,71 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
     <link rel="stylesheet" href="./sajiloCSIT/CSS/header_footer.css">
-    <title>Sajilo CSIT</title>
     <style>
+       
+       *{
+        font-family: Droid sans-serif;
+       }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap');
+        .first-sem-topics{
+          margin-top: 5rem;
+          height: 380px;
+          background-image: url("sajiloCSIT/Resources/images/background3.jpg");
+          display: flex;
+          justify-content: space-around;
+        }
 
-      * {
-        color: black;
-        margin: 10;
-        padding: 0;
-     
-      }
+        .display-syllabus{
+          background-image: url("./sajiloCSIT/Resources/images/Artboard\ 1.jpg");
+          color: #022B3A;
+          font-size:64px;
+          font-weight: 900;
+        }
 
-      main{
-        font-family: 'Source Sans Pro', sans-serif;
-      }
+        .semester, .syllabus{
+          color: #1F7A8C;
+;
+        }
 
-      .sajilo-csit {
-        display: flex;
-        justify-content: space-evenly;
-        background-image: url("./sajiloCSIT/Resources/images/background3.jpg");
-        width: 100%;
-        height: 50%;
-      }
+        .display-syllabus{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          width:100%;
+          height: 516px;
+          text-align: center;
+          vertical-align: middle;
+        }
 
-      .sajilo-csit>section:first-child{
-        width:30% ;
-      }
+        .first{
+          color: #022B3A;
+        }
 
-      .sajilo-page-searching-for {
-        display :flex;
-        background-image: url("./sajiloCSIT/Resources/images/background3.jpg");
-        width: 100%;
-        height: 50%;
-      }
+        .first-sem{
+          font-size: 64px;
+          font-weight: 700;
+        }
 
-      .processing{
-        width: 554.77px;
+        .sub-c-programming,.sub-code-101,.syllabus{
+          font-size: 32px;
+          font-weight: 400;
+          margin: 10px;
+        }
 
-      }
+        .sub-code-101>b,.syllabus>b{
+            font-weight: 700;       
+        }
 
-      .sajilo-main-letter,.csit-main-letter{
-        font-size: 67.5px;
-        font-weight:700;
-      }
-
-      .csit-main-letter{
-        color: #1F7A8C;
-      }
-
-      .contribute{
-        background-color: #1F7A8C;
-        color: aliceblue;
-        border-radius: 5px;
-        padding: .5rem 1rem;
-        border: none;
-        align-items: center;
-      }
-      
+        .research>img{
+          width: 314px;
+          height: 197px;
+        }
     </style>
   </head>
   <body>
-     <!-- The main header of the page -->
-     <header>
+
+    <header>
       <!-- Display the title of the page -->
       <h3>
           sajiloIT
@@ -90,51 +92,26 @@
           <button>Submit</button>
       </div>
   </header>
+<!-- Headings and subject informations -->
+    <article>
+      <section class="first-sem-topics">
+        <div>
+          <div class="first-sem"><span class="first">First</span> <span class="semester">Semester</span></div>
+          <div class="sub-c-programming">Subject:C Programming</div>
+          <div class="sub-code-101"><span> <b>Subject Code:</b> </span> <span>CSC 101</span></div>
+          <div class="syllabus"> <b>Syllabus</b> </div>
+        </div>
 
+        <div class="research">
+          <img  src="./sajiloCSIT/Resources/svg/research.svg" alt="research" />
+        </div>
+      </section>
+<!-- Display syllabus portion:Here lies all the syllabus which are to be inserted -->
+      <section class="display-syllabus">
+        <h2>Display the Syllabus</h2>
+      </section>
+    </article>
 
-
-
-
-    <main>
-      <article>
-        <container class="sajilo-csit">
-          <section>
-            <div></div>
-            <div class="home-intro">
-              <h2><span class="sajilo-main-letter">Sajilo</span> <span class="csit-main-letter">CSIT</span></h2>
-              <h3>Students Together Strong.</h3>
-              <p>
-                Your notes can help others pass the exam. Share your materials
-                to the CSIT community and help them in their journey.
-              </p>
-              <button class="contribute">Contribute</button>
-            </div>
-            <div></div>
-          </section>
-
-          <section>
-            <img class="processing" src="./sajiloCSIT/Resources/svg/programming.svg" alt="" />
-          </section>
-        </container>
-
-        <container class="sajilo-page-searching-for">
-          <h2 class="searching-for-letters">
-            <span>Searching</span> <span>for?</span>
-          </h2>
-          <section>
-            <div>
-              <img src="./sajiloCSIT/Resources/svg/cloud_file.svg" alt="" />
-            </div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </section>
-        </container>
-      </article>
-    </main>
-    
     <!------------ The footer of the page ------------->
     <footer>
       <!-- The first section which display the details -->
