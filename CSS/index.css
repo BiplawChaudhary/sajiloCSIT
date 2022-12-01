@@ -210,6 +210,27 @@ It displays the name and the image on the top of index page */
         margin-left: 7em;
     }
 
+    .middle_row{
+        gap:1em;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .middle_row img{
+        width: 60%;
+        margin-right: 1em;
+    }
+    .middle_row h1{
+        padding-bottom:0.5em;
+    }
+    .middle_row h3{
+        font-size: var(--FONT_SIZE_X);
+
+    }  
+    .middle_row aside{
+        margin-right: 1em;
+    } 
+
+
 }
 
 
