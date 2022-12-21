@@ -81,9 +81,9 @@ It displays the name and the image on the top of index page */
     display: none;
 }
 .first_row button{
-    background-color: hsl(190, 64%, 34%);
-    border-radius: 1em;
+    background-color: var(--COLOR1);
     border:none;
+    border-radius: 1em;
     color:#fff;
     font-family: inherit;
     font-size: 1rem;
