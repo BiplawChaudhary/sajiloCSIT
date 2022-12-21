@@ -1,3 +1,10 @@
+main{
+  margin:5em;
+  
+}
+main img{
+  width: 100%;
+}
 a{
   text-decoration: none;
   color: black;
@@ -18,10 +25,8 @@ a{
 }
 
 .analysis {
-  width: 53%;
-  height: 227px;
-  margin: 5rem;
-  padding: 5rem;
+  width: 40%;
+  
 
 }
 

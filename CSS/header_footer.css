@@ -1,216 +1,269 @@
-/* The CSs file for the header and footer */
-/* Organize the CSs using ABCSS and BLOCK ELEMENT MODIFIER(BEM) */
-
-/* Importing the fonts */
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
-/* The headers on flex */
-header{
-    background-color: hsl(210, 78%, 86%,0.3);
-    display: flex;
-    font-size: 1.2em;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-}
-
-header ol{
-    list-style-type:none;
-}
-
-nav li{
-    display: inline-block;
-    margin-inline: 0.5rem;
-    padding: 0 0.5em;
-}
-nav a{
-    color:#022B3A;
-    text-decoration:none;
-}
-nav a:hover{
-    color:#1F7A8C;
-    text-decoration: underline;
-    text-transform: scale(1);
-    transition:all 0.2s ease 0.02s;
-}
-header h3, .footer_details h3{
-    color: #022B3A;
-    font-family: 'Special Elite', cursive;
-}
-.header_search_bar input{
-    border-radius: 0.9em;
-    border:1px solid #1F7A8C;
-    height:2em;
-}   
-.header_search_bar button{
-    background-color: hsl(190, 64%, 34%);
-    border-radius: 1em;
-    border:none;
-    color:#fff;
-    font-family: inherit;
-    font-size: 0.8em;
-    padding: 0.3em 1em;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&&Oxanium&display=swap');
+:root{
+    --PADDING_WORD:0.1em;
+    --PADDING:0.3em;
+    --MARGIN_WORD:0.1em;
+    --MARGIN:0.3em;
+    --BOX_SHADOW:3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    --COLOR1:#022B3A;
+    --COLOR2:#1F7A8C;
+    --COLOR3:#BFDBF7;
+    --COLOR4:#E1E5F2;
+    --COLOR5: #FFFFFF;
+    --HOVER_COLOR:hsl(210, 78%, 86%,0.5);
+    --HEADING_FONT:'Montserrat', sans-serif;
+    --BODY_FONT:'Source Sans Pro', sans-serif;
     
+
 }
-.header_search_bar button:hover{
-    background-color: hsl(190, 64%, 34%,0.8);
-    color:black;
-  
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--HEADING_FONT);
 }
 
-.logo_image{
+body{
+    background: #fefefe;
+    font-family: var(--BODY_FONT);
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#fff;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-areas: 
+        "lg lg lk lk lk lk lk bt bt"; */
+    align-items: center;
+    justify-content: space-between;
+    padding:0 100px;
+    box-shadow: var(--BOX_SHADOW);
+    letter-spacing: 3px;
+   
+}
+header img{
+    /* grid-area: hd;  New */
+    width: 10%;
+    cursor: pointer;
+}
+ 
+.hamburger{
     display: none;
 }
+.nav-bar ul{
+    display: flex; 
+    list-style: none;
 
-/* CSS for the input field placeholder. */
-::placeholder{
-    font-family: inherit;
-    font-size: 1em;
-    opacity: 0.4;
-    padding:0.2em 1em;
+}
+.nav-bar ul li a{
+    display: block;
+    color:var(--COLOR1);
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin:0 5px;
+}
+.nav-bar ul li a:hover{
+    color: var(--COLOR5);
+    background-color: var(--COLOR1);
+}
+.nav-bar ul li a.active{
+    color: var(--COLOR5);
+    background-color: var(--COLOR1);
 }
 
-/* ------Footer ------- */
+header button{
+    grid-area: bt;
+    padding: 0.3em 3em;
+    border-color: var(--COLOR2);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    letter-spacing: 3px;
+    
+}
+.contactButton{
+    background-color: var(--COLOR1);
+    color:#fff;
+}
+
+/* Hover effects on button */
+.contributeButton:hover{
+    background-color: var(--COLOR1);
+    color:#fff;
+    transition:0.2s ease-in;
+}
+.contactButton:hover{
+    background-color: #fff;
+    color: black;
+    transition:0.2s ease-in;
+}
+
+
+
+/* CSs for the footer  */
+
 footer{
-    background-color: hsl(210, 78%, 86%,0.3);
+    background-color: hsl(196, 93%, 12%, 0.9);
+    color:var(--COLOR5);
     display: grid;
-    gap:2em;
-    grid-template-columns: 2fr 1fr 1fr 1.3fr;
-    margin-bottom: 0;
-    padding:0.5em 0.2em;
-    place-content: center;
-    
-}
-footer h3{
-    color:#022B3A;
-}
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 2em;
 
-/* First column of the footer */
-.footer_details{
-    margin-left: 5em;
-    text-align: justify;
 }
-/* SemesterLinks CSS */
-.sem_links a{
-    color: black;
-    text-decoration: none;
+footer h4{
+    padding:0.2em 0;
 }
-.sem_links a:hover{
-    color:#1F7A8C;
-    text-decoration: underline;
-    transition:all 0.2s ease 0.02s;
-}
-.sem_links p{   
-    padding: 0.3em 0;
-}
-
-/* The links section css */
-.links a{
-    color: black;
-    text-decoration: none;
-}
-.links a:hover{
-    color:#1F7A8C;
-    text-decoration: underline;
-    transition:all 0.2s ease 0.02s;
-}
-.links p{
-    padding: 0.3em 0;
+/* The image on fotter */
+.logoFooterLeft img{
+    width: 50%;
 }
 
 
-/* Contact forum  */
-.contact_forum{
-    margin-right: 5em;
-}
-.contact_forum label{
-    display: block;
-    font-weight: bold;
-    padding: 0.3em 0; 
-}
-.contact_forum button{
-    background-color: hsl(190, 64%, 34%);
-    border-radius: 1em;
-    border:none;
-    color:white;
-    font-family: inherit;
-    font-size: 1em;
-    font-weight:570;
-    margin-top:0.5em;
-    padding: 0.5em 0; 
-    width:50%;
-}
-.contact_forum button:hover{
-    background-color: hsl(190, 64%, 34%,0.8);
+/* Links on the footer */
+footer a{
     color: white;
-}
-.contact_forum input{
-    border-radius: 0.5em;
-    border:2px solid #1F7A8C;
-    width: 100%;
+    text-decoration: none;
     
 }
-.message_box{
-    height:5em;
+footer a:hover{
+    color: #BFDBF7;
+    text-decoration: underline;
+}
+footer p{
+    padding: 0.2em 0;
+    margin:0.1em 0;
+}
+svg{
+    fill: white;
+    margin-top:0.2em;
+    margin-right: 0.5em;
+}
+svg:hover{
+    fill:#BFDBF7;
+    transition:0.2s ease-in;
+}
+.followUS{
+    margin:1em 0;
 }
 
-
-
-/* Copyright Button CSS */
+/* The copyrigt section */
 .copyright{
-    background-color: hsl(210, 78%, 86%);
-    display: block;
-    font-size: 0.9em;
-    font-weight: bold;
-    margin:0em 0;
-    padding:0.5em;
     text-align: center;
+    color: white;
+    background-color: #022B3A;
+    padding:1em;
+    margin-bottom: 0px;
 }
 
 
-
-
-
-/* FOr mobile devices  */
-@media screen and (max-width: 600px) {
-
-    /* Header */
-    header nav, .header_search_bar, header h3{
-        display: none;
-    } 
+@media screen and (max-width:1320px){
     header{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
+        padding: 0 50px;
+        width: 100%;
     }
-   
-    .logo_image{
-        display: block;
-        color:red;
-        
+    .sideButton{
+        display: none;
     }
-    .logo_image img{
+}
+@media screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+        width: 100%;
+    }
+    .sideButton{
+        display: none;
+    }
+
+}
+@media screen and (max-width:900px){
+    header{
+        width: 100%;
+    }
+    header img{
+        /* grid-area: hd;  New */
         width: 40%;
     }
+    footer img{
+        width: 40%;
+    }
+    .sideButton{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: var(--COLOR1);
+        margin:6px 0;
 
-
+    }
     
-
-    /* Footer */
-    footer{
-        grid-template-columns: 1fr;
-        padding: 1em;;
+    .nav-bar{
+        height: 0;
+        position:absolute;
+        top:80px;
+        left:0;
+        right:0;
+        width: 100%;
+        background-color: var(--COLOR1);
+        box-shadow: var(--BOX_SHADOW);
+        transition: 0.4s;
+        overflow: hidden;
+        
         
     }
-    .footer_details{
-        margin:0;
+    .nav-bar ul li a{
+        color: var(--COLOR5);
     }
-    footer .links{
-        display: none;
+    .nav-bar ul li a:hover{
+        color: var(--COLOR1);
+        background-color: var(--COLOR5);
     }
-    footer .sem_links{
-        display: none;
+    .nav-bar ul li a.active{
+        color: var(--COLOR1);
+        background-color: var(--COLOR5);
     }
+    .nav-bar.active{
+        height: fit-content;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+        padding:1em;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s;
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 0.8em;
+    }
+
+
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        gap:2em;
+    }
+    .logoFooterLeft{
+        width: 100%;
+    }
+
+    
+    
 }
 
