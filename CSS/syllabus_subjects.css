@@ -14,9 +14,10 @@ main{
 }
 main p, 
 .bottom_bar h3,
-.bottom_bar ol li{
+.bottom_bar ol li,
+.syllabus_table ol li{
     font-family: 'Montserrat', sans-serif;
-    padding:0.1rem;
+    padding:0.2rem;
     
 }
 
@@ -52,7 +53,9 @@ main{
     width:15%;
     margin-left:3rem;
 }
-
+.s_name{
+    margin-bottom: 0.3rem;
+}
 
 /* ------Main SYllabus  */
 .mainSyllabus{
