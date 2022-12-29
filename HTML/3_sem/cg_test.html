@@ -5,245 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/header_footer.css">
-    <link rel="stylesheet" href="syllabus.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/syllabus_subjects.css">
+    <title>  Computer Graphics Syllabus</title>
 </head>
 <body>
-    <header>
-        <!-- Display the title of the page -->
-        <h3>
-            SajiloCSIT
-        </h3>
-
-        <!-- Navigation Bar -->
-        <nav>
-            <ol>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../semester_selection_notes.html">Notes</a></li>
-                <li><a href="../../semester_selection.html">Syllabus</a></li>
-                <li><a href="../../aboutus.html">About</a></li>
-            </ol>
-        </nav>
-        
-        <!-- Search Bar -->
-        <div class="header_search_bar">
-            <input type="text" placeholder="Looking for something">
-            <button>Submit</button>
-        </div>
-    </header>
-    <main>
-        <section class="topbar">
-            <div class="display_name align_center">
-                <h1>Third <span class="inner_style bold">Semester</span></h1>
-                <p>Subject: Computer Graphics</p>
-                <p><strong>Subject Code:</strong>CSC209</p>
-                <p style="color:#1F7A8C ; font-weight: 700;">Syllabus</p>
-            </div>
-        <img src="../../Resources/svg/research.svg" alt="pic">
-        </section> 
+    <!-- THis part contains the FOOTER of the page -->
+    <!-- COPY AND PASE THE PROVIDED CODE OF THE HEADER HEERE -->
     
+    <!-- The header of the page -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <div id="header"></div>
 
-        <!--syllabus section-->
-        <section class="syllabus"><div class="syllabus-wrapper">
+  <!-- tHE MAIN BODY -->
+  <!--Remaining section-->
+
+
+    <!-- Main Syllabus part of the page -->
+    <!-- EDIT THE CONTENTS OF THE PAGE HERE -->
+    <main>
+        <!-- The topbar of the page -->
+        <!-- Shows the image and the semester selected. -->
+        <section class="topfirst">
+            <!-- The leftside -->
+            <!-- CHANGE THE ANCHOR TAG BELOW ON EACH SEMESTER -->
+            <a href="../../SUBJECT_SELECTIONS/FIrst-sem.html"><h1><span class="textColor1">Third </span><span class="textColor2">Semester</span></h1></a>
+
+            <!-- the right image -->
+            <img src="../../Resources/svg/online_articles.svg" alt="Selction Image">
+
+        </section>
+
+         <!-- Main Subject's Name -->
+         <h1 class="s_name">Computer Graphics</h1>
+        <!-- THe main syllabus -->
+        <section class="mainSyllabus">
            
-            <div class="head-wraper"><div class="left">
-                <p><strong>Course Title:</strong>Computer Graphics</p>
-                <p><strong>Course No:</strong> CSC209
-                </p>
-                <p><strong>Nature of the course:</strong> Theory + Lab</p>
-                <p><strong>Semester:</strong>Third</p>
-            </div>
-            <div class="right">
-                <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
-                <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
-                <p><strong>Credit Hrs:</strong> 3</p>
-            </div>
-            </div>
-            <strong>Course Description: </strong> The course covers concepts of graphics hardware, software, and applications, data structures for representing 2D and 3D geometric objects, drawing algorithms for graphical objects,
-            techniques for representing and manipulating geometric objects, illumination and lighting models, and concept of 
-            virtual reality.<br><br>
-            
-            <p><strong>Course Objectives:</strong>  Discuss representation of data and algorithms used to perform operations on data
+
+            <!-- DIsplays the subjects credit, full marks, pass marks -->
+            <section class="topbar_syllabus">
+                <section class="syllabus_top_left">
+                    <p><b> Course Title:</b> Computer Graphics</p>  
+                    <p><b> Course No.:</b> CSC209</p>  
+                    <p><b> Course Nature:</b> Theory + Lab</p>
+                    <p><b> Semester:</b> Third </p>
+                    <p><b> Year:</b> Second</p>
+    
+                </section>
+                <selection class="syllabus_top_right">
+                    <p><b> Full Marks: </b> 60 + 20 + 20</p>
+                    <p><b> Pass Marks: </b> 24 + 8 + 8 </p>
+                    <p><b> Credit Hours:</b> 3</p>
+                </selection>
+            </section>
+
+
+            <section>
+                <p><b> 
+                    Course Description:
+                </b> 
+                The course covers concepts of graphics hardware, software, and applications, data structures for representing 2D and 3D geometric objects, drawing algorithms for graphical objects,
+                techniques for representing and manipulating geometric objects, illumination and lighting models, and concept of 
+                virtual reality.                </p>
+
+                <p><b> 
+                    Course Objectives:    
+                </b> 
+                Discuss representation of data and algorithms used to perform operations on data
                 Demonstrate different operations in terms of Micro-operations
                 Explain architecture of basic computer and micro-programmed control unit
                 Understand and memory and I/O organization of a typical computer system
-                Demonstrate benefits of pipelined systems.
-            <br><br> 
-            <strong>Course Contents</strong>
-            <dt><strong>Unit 1. Introduction of Computer Graphics</strong></dt>
-            <dd>1.1 A Brief Overview of Computer Graphics, Areas of
-                applications</dd>
-                  <dd>1.2 Graphics Hardware: Display Technology, Architecture of
-                    Raster-Scan Displays, Interlaced refresh procedure, refresh
-                    buffer, frame buffer, Vector Displays, Display Processors,
-                    Hard copy devices. Input Devices</dd>
-                <dd>1.3 Graphics Software: Software standards, Coordinate
-                    Representations, PHIGS Workstations, Need of machine
-                    independent graphics language</dd>
-                    <dd>1.4 Human visual system: basic of how we perceived the world,
-                        strength and weakness of the human visual system</dd>
-                        <dd>1.5 Color models: RGB, CMYK, HVS, XYZ</dd><br><br>
-            <dt><strong>Unit 2. Scan Conversion Algorithm</strong></dt>
-             <dd>2.1 Scan Converting a Point and a straight Line: DDA Line Algorithm, Bresenham’s Line Algorithm</dd>
-              <dd>2.2 Scan Converting Circle and Ellipse :Mid Point Circle and
-                Ellipse Algorithm</dd>
-              <dd>2.3 Area Filling: Scan Line Polygon fill Algorithm,Inside-
-                outside Test,Scan line fill of Curved Boundary area, Boundary-fill and Flood-fill algorithm</dd><br><br>
-            <dt><strong>Unit 3.Two-Dimensional Geometric Transformations</strong></dt>
-            <dd>3.1 Two-Dimensional translation, Rotation,Scaling, Reflection and Shearing</dd>
-            <dd>3.2 Homogeneous Coordinate and 2D Composite
+                Demonstrate benefits of pipelined systems.                </p>
+            </section>
+
+            <!-- Display the syllabus with the chapter's name and everything. -->
+            <section class="syllabus_table">
+                <table>
+                    <!-- The main heading for the table -->
+                    <tr>
+                        <th><h4>Contents of Chapter</h4></th>
+                    </tr>
+                    <!-- Add the row below in table as needed for chapters -->
+                    <!-- Unit-1 -->
+                    <tr>
+                        <td>
+                            <h4>Unit 1. Introduction of Computer Graphics (3 Hrs.)</h4>
+
+
+                            <p>
+                                1.1 A Brief Overview of Computer Graphics, Areas of
+                                applications<br> 1.2 Graphics Hardware: Display Technology, Architecture of
+                                Raster-Scan Displays, Interlaced refresh procedure, refresh
+                                buffer, frame buffer, Vector Displays, Display Processors,
+                                Hard copy devices. Input Devices<br>  1.3 Graphics Software: Software standards, Coordinate
+                                Representations, PHIGS Workstations, Need of machine
+                                independent graphics language<br>  1.4 Human visual system: basic of how we perceived the world,
+                                strength and weakness of the human visual system<br>1.5 Color models: RGB, CMYK, HVS, XYZ                       </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-2-->
+                    <tr>
+                        <td>
+                            <h4>Unit 2. Scan Conversion Algorithm (6 Hrs.)</h4>
+
+
+                            <p>
+                                2.1 Scan Converting a Point and a straight Line: DDA Line Algorithm, Bresenham’s Line Algorithm<br>
+                                2.2 Scan Converting Circle and Ellipse :Mid Point Circle and
+                Ellipse Algorithm<br>  2.3 Area Filling: Scan Line Polygon fill Algorithm,Inside-
+                outside Test,Scan line fill of Curved Boundary area, Boundary-fill and Flood-fill algorithm<br>                      </p>
+                        </td>
+                    </tr>
+
+                     <!-- Unit-3-->
+                     <tr>
+                        <td>
+                            <h4>Unit 3.Two-Dimensional Geometric Transformations (5 Hrs.)</h4>
+
+
+                            <p>
+                                3.1 Two-Dimensional translation, Rotation,Scaling, Reflection and Shearing<br>
+                                3.2 Homogeneous Coordinate and 2D Composite
                 Transformations. Transformation between Co-ordinate
-                Systems</dd>
-            <dd>3.3 Two Dimensional Viewing: Viewing pipeline,Window to
-                viewport coordinate transformation</dd>
-            <dd>3.4 Clipping: Point,Lines(Cohen Sutherland line
+                Systems<br>   3.3 Two Dimensional Viewing: Viewing pipeline,Window to
+                viewport coordinate transformation<br>  3.4 Clipping: Point,Lines(Cohen Sutherland line
                 clipping,Liang-BarskyLineClipping),Polygon
-                Clipping(Sutherland Hodgeman polygon clipping)</dd><br><br>
-            <dt><strong>Unit 4. Three-Dimensional Geometric Transformation</strong></dt>
-            <dd>4.1 Three-Dimensional translation, Rotation,Scaling, Reflection and Shearing</dd>
-            <dd>4.2 Three-Dimensional Composite Transformations</dd>
-            <dd>4.3 Three-Dimensional Viewing: Viewing pipeline, world to
+                Clipping(Sutherland Hodgeman polygon clipping)                   </p>
+                        </td>
+                    </tr>
+
+                     <!-- Unit-4-->
+                    <tr>
+                        <td>
+                            <h4>Unit 4. Three-Dimensional Geometric Transformation (5 Hrs.)</h4>
+
+
+                            <p>
+                                4.1 Three-Dimensional translation, Rotation,Scaling, Reflection and Shearing<br>
+                                4.2 Three-Dimensional Composite Transformations<br>
+                                4.3 Three-Dimensional Viewing: Viewing pipeline, world to
                 screen viewing transformation, Projection
-                concepts(Orthographic, parallel,perspective projections)</dd><br><br>
-            <dt><strong>Unit 5. 3D Objects Representation</strong></dt>
-            <dd>5.1 Representing Surfaces: Boundary and Space partitioning</dd>
-            <dd>5.1.1 Polygon Surface: Polygon tables , Surface normal and
+                concepts(Orthographic, parallel,perspective projections)                        </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-5-->
+                    <tr>
+                        <td>
+                            <h4>Unit 5. 3D Objects Representation (7 Hrs.)</h4>
+
+
+                            <p>
+                                5.1 Representing Surfaces: Boundary and Space partitioning<br>
+                                5.1.1 Polygon Surface: Polygon tables , Surface normal and
                 Spatial orientation of surfaces, Plane equations, Polygon
-                meshes</dd>
-            <dd>5.1.1 Polygon Surface: Polygon tables , Surface normal and
+                meshes<br> 5.1.1 Polygon Surface: Polygon tables , Surface normal and
                 Spatial orientation of surfaces, Plane equations, Polygon
-                meshes</dd>
-                <dd>5.1.3 Blobby Objects</dd>
-                <dd>5.2 Representing Curves: Parametric Cubic Curves, Spline
-                    Representation,Cubic spline interpolation, Hermite
-                    Curves,Bezier and B-spline Curve and surface, Fractals and
-                    its applications</dd>
-                    <dd>5.3 Quadric Surface: Sphere and Ellipsoid</dd><br><br>
-            <dt><strong>Unit 6. Solid Modeling</strong></dt>
-            <dd>6.1 Solids and solid modeling, boundary point, interior point,
-                closure</dd>
-            <dd>6.2 Sweep ,Boundary and Spatial-Partitioning Representation</dd>
-            <dd>6.3 Binary Space Partition Trees (BSP)</dd>
-                <dd>6.4 Octree Representation</dd><br><br>
-            <dt><strong>Unit 7. Visible Surface Detections</strong></dt>
-            <dd>7.1 Visible surface and hidden surface, Coherence for visibility</dd>
-            <dd>7.2 Image Space and Object Space Techniques</dd>
-            <dd>7.3 Back Face Detection, Depth Buffer (Z-buffer), A-Buffer and
-                Scan-Line Algorithms</dd>
-                <dd>7.4 Depth Sorting Method (Painter’s Algorithm)</dd>
-                <dd>7.5 BSP tree Method, Octree and Ray Tracing</dd><br><br>
-            <dt><strong>Unit 8. Illumination Models and Surface Rendering Techniques</strong></dt>
-            <dd>8.1 Defining Realism, Image Synthesis Validation, challenges in
-                computing light, optics model</dd>
-            <dd>8.2 Basic Illumination Models:Ambientlight, Diffuse
-                reflection,Specular reflection and Phong model<dd>
-            <dd>8.3 Intensity attenuation and Color consideration
-                ,Transparency,Shadows</dd>
-            <dd>8.4 Polygon Rendering Methods : Constant intensity shading,
-                Gouraud shading , Phong Shading and Fast Phong Shading, Real
-                time vs offline rendering</dd><br><br>
-            <dt><strong>Unit 9. Introduction to Virtual Reality</strong></dt>
-            <dd>9.1 Concept of Virtual reality</dd>
-            <dd>9.2 Virtual Reality Components of VR System, Types of VR
+                meshes<br>  5.1.3 Blobby Objects<br>    5.2 Representing Curves: Parametric Cubic Curves, Spline
+                Representation,Cubic spline interpolation, Hermite
+                Curves,Bezier and B-spline Curve and surface, Fractals and
+                its applications<br>  5.3 Quadric Surface: Sphere and Ellipsoid               </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-6-->
+                    <tr>
+                        <td>
+                            <h4>Unit 6. Solid Modeling (4 Hrs.)</h4>
+
+
+                            <p>
+                                6.1 Solids and solid modeling, boundary point, interior point,
+                                closure<br>  6.2 Sweep ,Boundary and Spatial-Partitioning Representation<br>
+                                6.3 Binary Space Partition Trees (BSP)<br>
+                                6.4 Octree Representation 
+                          </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-7-->
+                    <tr>
+                        <td>
+                            <h4>Unit 7. Visible Surface Detections (5 Hrs.)</h4>
+
+
+                            <p>
+                                7.1 Visible surface and hidden surface, Coherence for visibility<br>
+                                7.2 Image Space and Object Space Techniques<br>
+                                7.3 Back Face Detection, Depth Buffer (Z-buffer), A-Buffer and
+                Scan-Line Algorithms<br>
+                7.4 Depth Sorting Method (Painter’s Algorithm)<br>7.5 BSP tree Method, Octree and Ray Tracing
+                    </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-8-->
+                    <tr>
+                        <td>
+                            <h4>Unit 8. Illumination Models and Surface Rendering Techniques (5 Hrs.)</h4>
+
+
+                            <p>
+                                8.1 Defining Realism, Image Synthesis Validation, challenges in
+                                computing light, optics model<br>  8.2 Basic Illumination Models:Ambientlight, Diffuse
+                                reflection,Specular reflection and Phong model<br>8.3 Intensity attenuation and Color consideration
+                                ,Transparency,Shadows<br> 8.4 Polygon Rendering Methods : Constant intensity shading,
+                                Gouraud shading , Phong Shading and Fast Phong Shading, Real
+                                time vs offline rendering                         </p>
+                        </td>
+                    </tr>
+
+                    <!-- Unit-9-->
+                    <tr>
+                        <td>
+                            <h4>Unit 9. Introduction to Virtual Reality (2 Hrs.)</h4>
+
+
+                            <p>
+                                9.1 Concept of Virtual reality<br>
+                                9.2 Virtual Reality Components of VR System, Types of VR
                 System, 3D Position Trackers, Navigation and Manipulation
-                Interfaces</dd>
-            <dd>9.3 Visual computation in virtual reality</dd>
-            <dd>9.4 Augmented Reality</dd>
-            <dd>9.5 Application of VR</dd><br><br>
-            <dt><strong>Unit 10. Introduction to OpenGL</strong><dt>
-            <dd>10.1Introduction, Callback functions, Color commands,
-                Drawings pixels, lines, polygons using OpenGL, OpenGL
-                and Direct X APIs - key differences, Viewing, Lighting and
-                reflectance model</dd><br><br>
+                Interfaces<br>9.3 Visual computation in virtual reality<br>9.4 Augmented Reality<br>9.5 Application of VR                        </p>
+                        </td>
+                    </tr>
 
-                <p><b>Laboratory Works:</b><br>
-
-                        1. DDA Line Algorithm<br>
-                        2. Bresenham’s line drawing algorithm<br>
-                        3. Mid Point Circle Algorithm<br>
-                        4. Mid Point Ellipse Algorithm<br>
-                        5. Basic transformation on 2D including Translation, Rotation and Scaling<br>
-                        6. Simple 3D Object with basic transformations including Translation, Rotation and Scaling<br>
-                        7. Clipping<br>
-                        8. Hidden surface removal<br>
-                        9. Basic Drawing Techniques in OpenGL<br>
-                </p>
-            <dt><strong>Text Books:</strong></dt>
-            <dd>1. Donald Hearne and M.Pauline Baker, “Computer Graphics, C Versions.” Prentice Hall</dd><br><br>
-
-            <dt><strong>References Books:</strong></dt>
-            <dd>1. J.D. Foley, S.K. Feiner and J.F. Hughes, “Computer Graphics – Principles and Practises”
-                (Second Edition in C)</dd>
-            <dd>2. R.K. Maurya, “Computer Graphics with Virtual Reality”, Wiley India</dd>
-            <dd>3. F.S. Hill, Stephen M.Kelley, “Computer Graphics using Open GL” Prentice Hall</dd></div>
-        </section>
+                    <!-- Unit-10-->
+                    <tr>
+                        <td>
+                            <h4>Unit 10. Introduction to OpenGL(3 Hrs.)</h4>
 
 
+                            <p>
+                                10.1Introduction, Callback functions, Color commands,
+                                Drawings pixels, lines, polygons using OpenGL, OpenGL
+                                and Direct X APIs - key differences, Viewing, Lighting and
+                                reflectance model                            </p>
+                        </td>
+                    </tr>
+                    
+                </table>
+
+            </section>
+
+            
+            <!-- LAB WORKS, BOOKS, REFERENCE BOOKS -->
+            <section class="bottom_bar">
+                <!-- LAB WORKS SECTION -->
+                <section>
+                    <h3><b>
+                        Laboratory Works: 
+                    </b></h3>
+
+                    <p>
+                        <ol><li> DDA Line Algorithm</li>
+                            <li>Bresenham’s line drawing algorithm</li>
+                            <li>Mid Point Circle Algorithm</li>
+                            <li>Mid Point Ellipse Algorithm</li>
+                            <li>Basic transformation on 2D including Translation, Rotation and Scaling</li>
+                            <li>Simple 3D Object with basic transformations including Translation, Rotation and Scaling</li>
+                            <li>Clipping</li>
+                            <li>Hidden surface removal</li>
+                            <li>Basic Drawing Techniques in OpenGL</li>
+                        
+                        </ol>
+                     </p>
+                </section>
+
+                <!-- TEXT BOOKS SECTION -->
+                <section class="text_book">
+                    <h3><b>
+                        Text Books:
+                    </b></h3>
+                    <ol>
+                        <li>
+                            Donald Hearne and M.Pauline Baker, “Computer Graphics, C Versions.” Prentice Hall                        </li>
+
+                    </ol>
+                </section>
+                
+                <!-- REFERENCE BOOKS -->
+                <section class="ref_book">
+                    <h3><b>
+                        Reference Books:
+                    </b></h3>
+                    <ol>
+                        <li>
+                            J.D. Foley, S.K. Feiner and J.F. Hughes, “Computer Graphics – Principles and Practises”
+                            (Second Edition in C)                        </li>
+
+                        <li>
+                            R.K. Maurya, “Computer Graphics with Virtual Reality”, Wiley India                        </li>
+                        <li>
+                            F.S. Hill, Stephen M.Kelley, “Computer Graphics using Open GL” Prentice Hall                        </li>
+                        
+                    </ol>
+                </section>
+            </section>
+        
     </main>
-    <footer>
-        <!-- The first section which display the details -->
-        <section class="footer_details">
-            <h3>
-                ITsajilo
-            </h3>
-            <p>
-                ITsajilo was created while learning Web Technology in 5th semester of the CSIT course by the students of College of Applied Business (CAB) which is located at Gangahity, Chabahil.
-            </p>
-        </section>
-        
-        <!-- The links to the semester section -->
-        <section class="sem_links">
-            <h3>Notes</h3>
-            <p><a href="../1_sem/1_sem_notes.html">First Semester</a></p>
-            <p><a href="../2_sem/2_sem_notes.html">Second Semester</a></p>
-            <p><a href="../3_sem/3_sem_notes.html">Third Semester</a></p>
-            <p><a href="../4_sem/4_sem_notes.html">Fourth Semester</a></p>
-            <p><a href="../5_sem/5_sem_notes.html">Fifth Semester</a></p>
-            <p><a href="../6_sem/6_sem_notes.html">Sixth Semester</a></p>
-            <p><a href="../7_sem/7_sem_notes.html">Seventh Semester</a></p>
-            <p><a href="8_sem_notes.html">Eighth Semester</a></p>
-        </section>
 
-        
-        <!-- Link Section -->
-        <section class="links">
-            <h3>Links</h3>
-            <p><a href="../../aboutus.html">About Us</a></p>
-            <p><a href="../../about_csit.html">About CSIT</a></p>
-            <p><a href="../../privacy_policy.html">Privacy Policy</a></p>
-            <p><a href="../../terms_conditions.html">Terms and Conditions</a></p>
-        </section>
-        
-
-        <!-- The contact forum -->
-        <section class="contact_forum">
-            <h3>Contact US</h3>
-
-            <!-- Name -->
-            <label for="Name">Full Name</label>
-            <input type="text">
-
-            <!-- Email -->
-            <label for="">E-mail</label>
-            <input type="text">
-
-            <!-- Subject -->
-            <label for="">Subject</label>
-            <input type="text">
-
-            <!-- Message -->
-            <label for="" >Message</label>
-            <input type="text" class="message_box">
-
-            <!-- Submit BUtton -->
-            <button>Sumbit</button>
-
-        </section>
-       
-    </footer>
-     <!-- Copyright section -->
-     <div class="copyright">
-        <p>Copyright@2022 | ITsajilo | All Rights Reserved</p>
-    </div>
+    <!-- THis part contains the FOOTER of the page -->
+    <!-- COPY AND PASE THE PROVIDED CODE OF THE FOOTER HEERE -->
+    <!-- fOOTER SECTION -->
+    
+    <div id="footer"></div>
+    <script> 
+    $(function(){
+    
+        $("#header").load("../../HTML/hf/header_sem_select.html"); 
+        $("#footer").load("../../HTML/hf/footer_sem_select.html"); 
+    });
+    </script> 
 </body>
 </html>
