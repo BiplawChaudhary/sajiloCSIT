@@ -58,7 +58,7 @@ main section h1{
 }
 
 /* CSS for the aside */
-aside{
+.menu{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:3em;
@@ -73,7 +73,7 @@ aside{
 
 /* The Right Side Menu */
 /* Aligning sll the fiures to cemter */
-aside figure{
+.menu figure{
     text-align: center;
     margin:1em 0;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
@@ -81,20 +81,20 @@ aside figure{
     padding:0.4em 0;
     border-radius: 10px;
 }
-aside figure:hover{
+.menu figure:hover{
     background-color:var(--HOVER_COLOR);
 }
 /* Changing the size of the logo in the butotn */
-aside img{
+.menu img{
     width: 15%;
 }
 
 /* Changing the styles of the anchor tag */
-aside a{
+.menu a{
     text-decoration: none;
     color: black;
 }
-aside a:hover{
+.menu a:hover{
     color:var(--COLOR2);
 }
 

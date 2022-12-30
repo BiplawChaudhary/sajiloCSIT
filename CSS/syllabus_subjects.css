@@ -44,6 +44,8 @@ main{
     align-items: center;
     margin: 1em;
     gap:15rem;
+    background: url("/Resources/svg/wave.svg");
+    background-size: cover;
 }
 .topfirst h1{
     font-size: 3rem;
