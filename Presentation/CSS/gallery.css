@@ -1,6 +1,9 @@
 div.gallery {
     border: 1px solid #ccc;
   }
+main{
+  margin-top:2em;
+}
   
   div.gallery:hover {
     border: 1px solid #777;
@@ -9,6 +12,7 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+    display: block;
   }
   
   div.desc {
@@ -20,7 +24,7 @@ div.gallery {
   * {
     box-sizing: border-box;
   }
-  
+
   .responsive {
     padding: 0 6px;
     float: left;
